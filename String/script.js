@@ -48,6 +48,7 @@ canvas.addEventListener('mousemove', event => {
 });
 
 canvas.addEventListener('mouseup', event => {
+	if (!isDragging && !draggedNode){return;}
 	isDragging = false;
 	draggedNode = null;
 	
