@@ -5,7 +5,7 @@ function gravityDrop() {
     let velocity = 0;
   
     // Calculate the target position (bottom of the screen)
-    let targetPosition = overlayHeight - leafHeight;
+    let targetPosition = overlayHeight - leafHeight - 5;
     let currentPosition = 120;
 
     // Define the animation function
