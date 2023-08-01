@@ -24,7 +24,7 @@ body{
   align-items: center;
 }
 
-#overlay img {
+#overlay #portfolio-image{
   margin-top:200px;
   max-width: 20%;
   max-height: 20%;
@@ -46,7 +46,23 @@ body{
 a{
     text-decoration: none;
 }
-
+#blossom{
+  position: absolute;
+  top:0;
+  right: 0;
+  height: 40%;
+}
+#blossom-leaf{
+  position: absolute;
+  top:120px;
+  right: 160px;
+  height: 40px;
+  width: 40px;
+}
+#blossom img, #blossom-leaf img{
+  height: 100%;
+  width: 100%;
+}
 /* Colour section */
 #overlay{background-color: pink;}
 
