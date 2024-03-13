@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bishal216/static/css/main.af65ff73.css",
+    "main.js": "/bishal216/static/js/main.cd81005d.js",
+    "index.html": "/bishal216/index.html",
+    "main.af65ff73.css.map": "/bishal216/static/css/main.af65ff73.css.map",
+    "main.cd81005d.js.map": "/bishal216/static/js/main.cd81005d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af65ff73.css",
+    "static/js/main.cd81005d.js"
+  ]
+}
