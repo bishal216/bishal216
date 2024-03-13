@@ -1,0 +1,69 @@
+.ideate {
+  margin: 0;
+  width: 255px;
+  position: relative;
+  font-size: inherit;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.parent-node {
+  height: 27px;
+  width: 27px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--night-200);
+  border: 0 solid var(--night-400);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.envision-the-skies {
+  width: 255px;
+  position: relative;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  line-height: 24px;
+  text-align: left;
+  display: inline-block;
+}
+.branch-node,
+.leaf-node {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.leaf-node {
+  width: 917px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.branch-node {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-155xl);
+  box-sizing: border-box;
+  text-align: right;
+  font-size: var(--text-2xl-font-bold-size);
+  color: var(--white-smoke);
+  font-family: var(--text-body-font-medium-full-caps);
+}
+@media screen and (max-width: 1050px) {
+  .ideate {
+    font-size: var(--font-size-10xl);
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .leaf-node {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ideate {
+    font-size: var(--font-size-3xl);
+    line-height: 24px;
+  }
+}
