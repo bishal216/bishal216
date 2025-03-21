@@ -1,0 +1,485 @@
+.descendant-nodes-icon {
+  width: 103.19%;
+  height: calc(100% - 5.8px);
+  position: absolute;
+  margin: 0 !important;
+  top: 3px;
+  right: -1.6%;
+  bottom: 2.8px;
+  left: -1.6%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  mix-blend-mode: normal;
+}
+.game-dev-on,
+.where-vision-meets {
+  align-self: stretch;
+  position: relative;
+}
+.where-vision-meets {
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: linear-gradient(89.9deg, #f23e0d, #fb793c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.game-dev-on {
+  margin: 0;
+  font-size: var(--text-6xl-font-black-size);
+  letter-spacing: -0.05em;
+  line-height: 104px;
+  font-weight: 900;
+  font-family: inherit;
+}
+.edge-connection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 0;
+}
+.our-core-principles {
+  width: 936px;
+  position: relative;
+  line-height: 28px;
+  display: inline-block;
+  max-width: 100%;
+}
+.branch-split {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--text-lg-font-normal-size);
+  color: var(--night-300);
+}
+.button3 {
+  position: relative;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--text-body-font-medium-full-caps);
+  color: var(--coquelicot-50);
+  text-align: left;
+}
+.button2,
+.tree-structure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--coquelicot-600-main);
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.button2:hover {
+  background-color: var(--color-orangered-100);
+}
+.tree-structure {
+  width: 1128px;
+  flex-direction: column;
+  gap: 48px 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.lightning-bolt-icon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 32px;
+}
+.get-to-the {
+  height: 32px;
+  flex: 1;
+  position: relative;
+  line-height: 28px;
+  display: inline-block;
+}
+.smallcard {
+  flex: 1;
+  border-radius: var(--br-base);
+  background: linear-gradient(
+    145.71deg,
+    rgba(58, 63, 63, 0.62),
+    rgba(58, 63, 63, 0) 62.83%
+  );
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-mini);
+  gap: 0 24px;
+  min-width: 270px;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.get-to-the1,
+.hand-icon {
+  height: 32px;
+  position: relative;
+}
+.hand-icon {
+  width: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 32px;
+}
+.get-to-the1 {
+  flex: 1;
+  line-height: 28px;
+  display: inline-block;
+}
+.smallcard1 {
+  flex: 1;
+  border-radius: var(--br-base);
+  background: linear-gradient(
+    145.71deg,
+    rgba(58, 63, 63, 0.62),
+    rgba(58, 63, 63, 0) 62.83%
+  );
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-mini);
+  gap: 0 24px;
+  min-width: 270px;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.get-to-the2,
+.rocket-icon {
+  height: 32px;
+  position: relative;
+}
+.rocket-icon {
+  width: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 32px;
+}
+.get-to-the2 {
+  flex: 1;
+  line-height: 28px;
+  display: inline-block;
+}
+.smallcard2,
+.sub-branches {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0 24px;
+  max-width: 100%;
+}
+.smallcard2 {
+  flex: 1;
+  border-radius: var(--br-base);
+  background: linear-gradient(
+    145.71deg,
+    rgba(58, 63, 63, 0.62),
+    rgba(58, 63, 63, 0) 62.83%
+  );
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  align-items: center;
+  padding: var(--padding-base) var(--padding-mini);
+  min-width: 270px;
+  white-space: nowrap;
+}
+.sub-branches {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.with-swift-its {
+  width: 480px;
+  position: relative;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  line-height: 24px;
+  color: var(--white-smoke);
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+}
+.ancestor-nodes,
+.root-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.root-branch {
+  width: 1128px;
+  gap: 24px 0;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--text-lg-font-normal-size);
+  color: var(--night-200);
+}
+.ancestor-nodes {
+  align-self: stretch;
+  padding: var(--padding-205xl) var(--padding-xl) 0;
+  box-sizing: border-box;
+  position: relative;
+  gap: 160px 0;
+}
+.downanimation-icon {
+  width: 30.8px;
+  height: 64px;
+  position: relative;
+}
+.root-node-child,
+.swift-icon {
+  width: 42px;
+  height: 30.9px;
+  position: absolute;
+  margin: 0 !important;
+  top: 24.8px;
+  left: 156px;
+  z-index: 1;
+}
+.swift-icon {
+  width: 91.8px;
+  height: 32px;
+  top: 24px;
+  left: 211.5px;
+}
+.click-link4 {
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navitems4 {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+.click-link5 {
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navitems5 {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+.click-link6 {
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navitems6 {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+.click-link7 {
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.branch-merger,
+.navitems7 {
+  display: flex;
+  flex-direction: row;
+}
+.navitems7 {
+  border-radius: var(--br-5xs);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+.branch-merger {
+  margin: 0;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  color: var(--night-200);
+  font-family: var(--text-body-font-medium-full-caps);
+}
+.button5 {
+  height: 24px;
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  white-space: nowrap;
+}
+.button4 {
+  border-radius: var(--br-5xs);
+  background-color: var(--coquelicot-600-main);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  white-space: nowrap;
+}
+.navbar1,
+.root-node {
+  top: 0;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.navbar1 {
+  width: 396px;
+  margin: 0 !important;
+  position: sticky;
+  right: 512px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--night-900);
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-6xs);
+  gap: 0 24px;
+  z-index: 99;
+  text-align: left;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  color: var(--coquelicot-50);
+  font-family: var(--text-body-font-medium-full-caps);
+}
+.root-node {
+  position: absolute;
+  left: 0;
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(58, 63, 63, 0.3),
+    rgba(9, 10, 10, 0)
+  );
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 112px 0;
+}
+.button7 {
+  position: relative;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--text-body-font-medium-full-caps);
+  color: var(--burning-orange-400-main);
+  text-align: left;
+}
+.button6 {
+  cursor: pointer;
+  border: 1px solid var(--burning-orange-400-main);
+  padding: var(--padding-5xs) var(--padding-mini);
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 1157px;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+  z-index: 1;
+}
+.button6:hover {
+  background-color: var(--color-chocolate-200);
+  border: 1px solid var(--color-chocolate-100);
+  box-sizing: border-box;
+}
+.subtree {
+  align-self: stretch;
+  height: 1172px;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  color: var(--white-smoke);
+  font-family: var(--text-body-font-medium-full-caps);
+}
+@media screen and (max-width: 1200px) {
+  .ancestor-nodes {
+    gap: 80px 0;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .game-dev-on {
+    font-size: var(--font-size-33xl);
+    line-height: 62px;
+  }
+  .subtree {
+    height: auto;
+    min-height: 1172;
+  }
+}
+@media screen and (max-width: 750px) {
+  .tree-structure {
+    gap: 24px 0;
+  }
+  .ancestor-nodes {
+    gap: 40px 0;
+  }
+  .root-node {
+    gap: 56px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .game-dev-on {
+    font-size: var(--font-size-12xl);
+    line-height: 42px;
+  }
+  .our-core-principles {
+    font-size: var(--font-size-mid);
+    line-height: 22px;
+  }
+  .ancestor-nodes {
+    gap: 20px 0;
+  }
+  .root-node {
+    gap: 28px 0;
+  }
+}

@@ -1,0 +1,114 @@
+.from-slow-to {
+  width: 160px;
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: linear-gradient(89.9deg, #f23e0d, #fb793c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.mask-group-icon {
+  width: 1128px;
+  height: 296px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 176px);
+  left: calc(50% - 564px);
+  object-fit: cover;
+}
+.are-slow-iterations {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: inherit;
+}
+.game-development-is1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--text-lg-font-normal-size);
+  line-height: 28px;
+  color: var(--night-300);
+}
+.branch-extensions,
+.node-families {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.branch-extensions {
+  align-items: center;
+  gap: 56px 0;
+}
+.node-families {
+  align-items: flex-start;
+  z-index: 1;
+}
+.ancestor-lines,
+.tree-diversity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tree-diversity {
+  align-self: stretch;
+  padding: var(--padding-29xl) 0 0;
+  position: relative;
+  font-size: var(--text-2xl-font-bold-size);
+}
+.ancestor-lines {
+  width: 744px;
+  gap: 64px 0;
+  max-width: 100%;
+}
+.nested-clusters {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-93xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  color: var(--white-smoke);
+  font-family: var(--text-body-font-medium-full-caps);
+}
+@media screen and (max-width: 1050px) {
+  .are-slow-iterations {
+    font-size: var(--font-size-10xl);
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .branch-extensions {
+    gap: 28px 0;
+  }
+  .ancestor-lines {
+    gap: 32px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .are-slow-iterations {
+    font-size: var(--font-size-3xl);
+    line-height: 24px;
+  }
+  .game-development-is1 {
+    font-size: var(--font-size-mid);
+    line-height: 22px;
+  }
+  .ancestor-lines {
+    gap: 16px 0;
+  }
+  .nested-clusters {
+    padding-bottom: var(--padding-54xl);
+    box-sizing: border-box;
+  }
+}

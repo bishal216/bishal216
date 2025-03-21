@@ -1,0 +1,243 @@
+.sw {
+  color: var(--coquelicot-600-main);
+}
+.the-swift-swystem-container {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  line-height: 80px;
+  font-weight: 900;
+  font-family: inherit;
+}
+.game-development-is {
+  width: 706px;
+  position: relative;
+  line-height: 28px;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.polygon-node,
+.star-node {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.polygon-node {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  font-size: var(--text-lg-font-normal-size);
+  color: var(--night-300);
+}
+.star-node {
+  width: 936px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 56px 0;
+}
+.line-3-stroke {
+  height: 1434px;
+  width: 10px;
+  position: absolute;
+  margin: 0 !important;
+  right: 714.5px;
+  bottom: -1320px;
+  object-fit: contain;
+}
+.vector-node {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 160px;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--text-5xl-font-black-size);
+  color: var(--white-smoke);
+  font-family: var(--text-body-font-medium-full-caps);
+}
+.click-link {
+  height: 24px;
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  white-space: nowrap;
+}
+.navitems {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  box-sizing: border-box;
+  min-width: 72px;
+}
+.click-link1 {
+  height: 24px;
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  white-space: nowrap;
+}
+.navitems1 {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  box-sizing: border-box;
+  min-width: 68px;
+}
+.click-link2 {
+  height: 24px;
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  white-space: nowrap;
+}
+.navitems2 {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  box-sizing: border-box;
+  min-width: 68px;
+}
+.click-link3 {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.navitems-parent,
+.navitems3 {
+  display: flex;
+  flex-direction: row;
+}
+.navitems3 {
+  height: 40px;
+  border-radius: var(--br-5xs);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  box-sizing: border-box;
+}
+.navitems-parent {
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  row-gap: 20px;
+}
+.button,
+.button1 {
+  white-space: nowrap;
+}
+.button1 {
+  height: 24px;
+  position: relative;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+.button {
+  border-radius: var(--br-5xs);
+  background-color: var(--coquelicot-600-main);
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  color: var(--coquelicot-50);
+}
+.navbar,
+.swift-lp {
+  box-sizing: border-box;
+}
+.navbar {
+  width: 396px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--night-900);
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-6xs);
+  gap: 0 24px;
+  max-width: 100%;
+}
+.swift-lp {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 64px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--text-body-font-medium-full-caps-size);
+  color: var(--night-100);
+  font-family: var(--text-body-font-medium-full-caps);
+}
+@media screen and (max-width: 1050px) {
+  .the-swift-swystem-container {
+    font-size: var(--font-size-21xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .star-node {
+    gap: 28px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .the-swift-swystem-container {
+    font-size: var(--font-size-5xl);
+    line-height: 32px;
+  }
+  .game-development-is {
+    font-size: var(--font-size-mid);
+    line-height: 22px;
+  }
+  .vector-node {
+    padding-bottom: 104px;
+    box-sizing: border-box;
+  }
+}
