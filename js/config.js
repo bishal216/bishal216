@@ -50,7 +50,7 @@ const CONFIG = {
      Leave empty string "" to run in simulation mode.
      See worker.js for full deployment instructions.
   ─────────────────────────────────────────────────────────────── */
-  discord_webhook: "portfolio2discord.bis3hal.workers.dev",  // e.g. "https://contact-proxy.yourname.workers.dev"
+  discord_webhook: "https://portfolio2discord.bis3hal.workers.dev",  // e.g. "https://contact-proxy.yourname.workers.dev"
 
   /* ── GitHub API token ─────────────────────────────────────────
      Raises the rate limit from 60 → 5000 requests/hour.
