@@ -1,44 +1,238 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Portfolio</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Repo Manager</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-
-  <script src="js/script.js" defer></script>
-  <script src="js/leafFall.js" defer></script>
-
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <!-- Overlay -->
-  <div id="overlay" class="fullpage-container">
-    <div id="blossom">
-      <img src="images/Blossom.png" alt="Photo">
-    </div>
-    <div id="blossom-leaf" onclick="gravityDrop()">
-      <img src="images/blossom-leaf.png" alt="Photo">
-    </div>
-    <img id="portfolio-image" src="images/Photo.jpg" alt="Photo">
-    <h1>- Bishal Katuwal -</h1>
-    <p>Computer Engineer</p>
-    <p>
-      <a href="https://github.com/bishal216" target="_blank"><ion-icon name="logo-github">Github</ion-icon></a>
-      <a href="https://www.linkedin.com/in/bishal-katuwal-35236516a/" target="_blank"><ion-icon
-          name="logo-linkedin">LinkedIn</ion-icon></a>
-    </p> <!-- Icons -->
-  </div>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" id="navLogo">
+        <span class="nav-logo-tilde">~</span><span id="navLogoText"></span>
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"   class="nav-link" data-index="01">about</a></li>
+        <li><a href="#repos"   class="nav-link" data-index="02">repos</a></li>
+        <li><a href="#contact" class="nav-link" data-index="03">contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-scanlines"></div>
+    <div class="hero-inner">
+      <div class="hero-prompt-line">
+        <span class="prompt-path">~/portfolio</span>
+        <span class="prompt-arrow">❯</span>
+        <span class="prompt-cmd">whoami</span>
+      </div>
+      <h1 class="hero-name" id="heroName"></h1>
+      <div class="hero-role-line">
+        <span class="role-prefix">// </span>
+        <span id="heroRole" class="hero-role"></span>
+        <span class="hero-cursor">█</span>
+      </div>
+      <p class="hero-bio" id="heroBio"></p>
+      <div class="hero-actions" id="heroActions"></div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num" id="statRepos">0</span>
+          <span class="stat-label">repositories</span>
+        </div>
+        <div class="hero-stat-sep">·</div>
+        <div class="hero-stat">
+          <span class="stat-num" id="statStars">0</span>
+          <span class="stat-label">total stars</span>
+        </div>
+        <div class="hero-stat-sep">·</div>
+        <div class="hero-stat">
+          <span class="stat-num" id="statLangs">0</span>
+          <span class="stat-label">languages</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-cmd">
+        <span class="cmd-prompt">$</span>
+        <span class="cmd-text">cat about.md</span>
+      </div>
+      <div class="about-grid">
+
+        <!-- Terminal window: profile.json — hydrated from data.json -->
+        <div class="terminal-window reveal">
+          <div class="terminal-chrome">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-amber"></span>
+            <span class="t-dot t-green"></span>
+            <span class="t-chrome-title">profile.json</span>
+          </div>
+          <div class="terminal-body">
+            <pre class="terminal-code" id="profileJson"></pre>
+            <div class="terminal-input-line">
+              <span class="t-prompt-sym">❯</span>
+              <span class="t-blink">_</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prose bio — hydrated from data.json -->
+        <div class="about-prose reveal">
+          <h2 class="about-heading" id="aboutHeading"></h2>
+          <div id="aboutParagraphs"></div>
+          <div class="about-skills">
+            <div class="skill-group">
+              <span class="skill-label">// currently using</span>
+              <div class="skill-tags" id="skillsCurrent"></div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-label">// learning next</span>
+              <div class="skill-tags" id="skillsLearning"></div>
+            </div>
+          </div>
+          <a href="#repos" class="about-cta">
+            See my projects <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ REPOS ═══════════════════ -->
+  <section id="repos" class="section repos-section">
+    <div class="container">
+      <div class="section-cmd">
+        <span class="cmd-prompt">$</span>
+        <span class="cmd-text">ls -la ./projects</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="repo-controls">
+        <div class="repo-search-wrap">
+          <span class="search-prompt">❯</span>
+          <input type="text" id="repoSearch" placeholder="search repos..." autocomplete="off" spellcheck="false">
+        </div>
+        <div class="filter-pills" id="filterPills">
+          <button class="filter-pill active" data-lang="all">all</button>
+        </div>
+      </div>
+
+      <!-- Meta bar -->
+      <div class="repo-meta-bar">
+        <span class="repo-count-text">
+          <span class="rc-num" id="visibleCount">0</span>
+          <span class="rc-label"> results</span>
+          <span class="cache-age" id="cacheAge"></span>
+        </span>
+        <div class="meta-bar-right">
+          <span class="sync-status" id="syncStatus">
+            <span class="status-dot" style="background:#6b7a8d"></span>loading
+          </span>
+          <button class="refresh-btn" id="refreshBtn" title="Force refresh from GitHub">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+          <button class="pin-toggle" id="pinnedToggle">
+            <i class="fas fa-thumbtack"></i>
+            <span>pinned only</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div id="repoGrid" class="repo-grid">
+        <div id="noResults" class="no-results" style="display:none">
+          <span class="no-results-icon">_</span>
+          <p>no repositories found<span class="blink">█</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-cmd">
+        <span class="cmd-prompt">$</span>
+        <span class="cmd-text">./contact --send-message</span>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <h2 class="contact-heading" id="contactHeading"></h2>
+          <p class="contact-sub" id="contactSub"></p>
+          <div class="contact-links" id="contactLinks"></div>
+          <div class="contact-location" id="contactLocation"></div>
+        </div>
+
+        <div class="terminal-window reveal">
+          <div class="terminal-chrome">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-amber"></span>
+            <span class="t-dot t-green"></span>
+            <span class="t-chrome-title">send_message.sh</span>
+          </div>
+          <div class="terminal-body contact-form-body">
+            <div class="form-field-group" id="formOutput"></div>
+            <div class="t-form-row">
+              <label class="t-label"><span class="tc-key">name</span> =</label>
+              <input type="text" id="contactName" class="t-input" placeholder="your name" autocomplete="off">
+            </div>
+            <div class="t-form-row">
+              <label class="t-label"><span class="tc-key">email</span> =</label>
+              <input type="email" id="contactEmail" class="t-input" placeholder="your@email.com" autocomplete="off">
+            </div>
+            <div class="t-form-row t-form-textarea">
+              <label class="t-label"><span class="tc-key">message</span> =</label>
+              <textarea id="contactMessage" class="t-input t-textarea" placeholder="write your message here..." rows="4"></textarea>
+            </div>
+            <div class="t-form-submit">
+              <button class="btn-terminal btn-primary" id="contactSubmit">
+                <span class="btn-bracket">[</span>./send<span class="btn-bracket">]</span>
+              </button>
+              <span class="submit-hint">// ctrl+enter to send</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">
+        <span class="footer-prompt" id="footerLogo"></span>
+        <span class="footer-sep"> · </span>
+        &copy; <span id="footerYear"></span> <span id="footerName"></span>
+      </span>
+      <span class="footer-made" id="footerTagline"></span>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/repos.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>

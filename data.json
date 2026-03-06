@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "site_title":   "Bishal Katuwal — Portfolio",
+    "nav_logo":     "~/portfolio",
+    "footer_name":  "Bishal Katuwal",
+    "footer_tagline": "crafted with ♥ & caffeine"
+  },
+
+  "hero": {
+    "name": "Bishal Katuwal",
+    "tagline": "Trying random things. Hoping one of them works.",
+    "typewriter_roles": [
+      "Full-Stack Developer",
+      "Computer Engineer",
+      "Problem Solver"
+    ],
+    "cta_primary": {
+      "label": "./view-repos",
+      "href":  "#repos"
+    },
+    "cta_secondary": {
+      "label": "./contact-me",
+      "href":  "#contact"
+    }
+  },
+
+  "about": {
+    "profile": {
+      "name":        "Bishal Katuwal",
+      "role":        "Computer Engineer",
+      "location":    "Kathmandu, NP",
+      "university":  "Tribhuvan University",
+      "focus":       ["Full-Stack Dev", "Game Development", "Data Visualization"],
+      "stack": {
+        "languages": ["JS", "TS", "Python", "C++"],
+        "frontend":  ["React", "Vite"],
+        "backend":   ["Node", "SQLite"]
+      },
+      "status":  "employed at [redacted]",
+      "coffee":  "∞"
+    },
+    "bio": {
+      "heading_line1": "Building software",
+      "heading_line2": "one AI at a time.",
+      "paragraphs": [
+        "I'm a developer passionate about building tools that are fast, minimal, and purposeful. Blah blah, you know the drill. The usual spiel.",
+        "Currently just vibe coding honestly because what's the point."
+      ]
+    },
+    "skills": {
+      "current":  ["React", "TypeScript", "Node.js", "SQLite", "LaTeX", "D3.js"],
+      "learning": ["Prompting :')"]
+    }
+  },
+
+  "contact": {
+    "heading_line1": "Let's",
+    "heading_line2": "connect.",
+    "subtext": "Got a project idea, a question, or just want to say hi? I'm always open to interesting conversations.",
+    "email": "bis3hal@gmail.com",
+    "links": [
+      {
+        "icon":  "fas fa-envelope",
+        "label": "bis3hal@gmail.com",
+        "href":  "mailto:bis3hal@gmail.com"
+      },
+      {
+        "icon":  "fab fa-github",
+        "label": "github.com/bishal216",
+        "href":  "https://github.com/bishal216"
+      },
+      {
+        "icon":  "fab fa-linkedin",
+        "label": "linkedin.com/in/bishal-katuwal",
+        "href":  "https://www.linkedin.com/in/bishal-katuwal-35236516a/"
+      }
+    ],
+    "location": "Kathmandu, Nepal"
+  }
+}
