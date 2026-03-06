@@ -69,7 +69,7 @@ const CONFIG = {
     showForks:    false,  // show repos that are forks of other repos
     showArchived: false,  // show archived repos
     maxRepos:     50,     // max repos to fetch (GitHub API max per page: 100)
-    sortBy:       "updated" // "updated" | "stars" | "name"
+    sortBy:       "name" // "updated" | "stars" | "name"
   }
 
 };
