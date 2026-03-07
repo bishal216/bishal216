@@ -311,60 +311,57 @@ ${focusItems}
   }
 
   async function sendToDiscord(name, email, message) {
-    const workerUrl = CONFIG.discord_webhook;
-    if (!workerUrl) return { simulated: true };
+  const workerUrl = CONFIG.discord_webhook;
+  if (!workerUrl) return { simulated: true };
 
-    const res = await fetch(workerUrl, {
-      method:  "POST",
-      headers: { "Content-Type": "application/json" },
-      body:    JSON.stringify({ name, email, message })
-    });
-
-    const json = await res.json().catch(() => ({}));
-
-    if (!res.ok) {
-      throw new Error(json.error || `Worker responded with ${res.status}`);
-    }
-    return { simulated: false };
-  }
-
-  contactSubmit?.addEventListener("click", async () => {
-    const name    = document.getElementById("contactName")?.value.trim();
-    const email   = document.getElementById("contactEmail")?.value.trim();
-    const message = document.getElementById("contactMessage")?.value.trim();
-
-    formOutput.innerHTML = "";
-
-    if (!name)                                         { addOutputLine("✗ error: name is required",         true); return; }
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { addOutputLine("✗ error: valid email is required", true); return; }
-    if (!message)                                      { addOutputLine("✗ error: message cannot be empty",  true); return; }
-
-    contactSubmit.disabled = true;
-    addOutputLine("> validating input... ✓");
-    addOutputLine(CONFIG.discord_webhook ? "> sending to discord..." : "> no webhook configured, simulating...");
-
-    try {
-      const result = await sendToDiscord(name, email, message);
-
-      if (result.simulated) {
-        addOutputLine("> [simulated] message received ✓");
-        addOutputLine("> set discord_webhook in config.js to go live.");
-      } else {
-        addOutputLine("✓ message delivered to discord!");
-        addOutputLine(`> reply to: ${email}`);
-      }
-
-      document.getElementById("contactName").value    = "";
-      document.getElementById("contactEmail").value   = "";
-      document.getElementById("contactMessage").value = "";
-
-    } catch (err) {
-      addOutputLine(`✗ error: ${err.message}`, true);
-      addOutputLine("> check your discord_webhook in config.js", true);
-    } finally {
-      contactSubmit.disabled = false;
-    }
+  const res = await fetch(workerUrl, {
+    method:  "POST",
+    headers: { "Content-Type": "application/json" },
+    body:    JSON.stringify({ name, email, message })
   });
+
+  const json = await res.json().catch(() => ({}));
+
+  if (!res.ok) {
+    throw new Error(json.error || `Worker responded with ${res.status}`);
+  }
+  return { simulated: false };
+}
+
+contactSubmit?.addEventListener("click", async () => {
+  const name    = document.getElementById("contactName")?.value.trim();
+  const email   = document.getElementById("contactEmail")?.value.trim();
+  const message = document.getElementById("contactMessage")?.value.trim();
+
+  formOutput.innerHTML = "";
+
+  if (!name)                                                { addOutputLine("✗ error: name is required",        true); return; }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { addOutputLine("✗ error: valid email is required", true); return; }
+  if (!message)                                             { addOutputLine("✗ error: message cannot be empty", true); return; }
+
+  contactSubmit.disabled = true;
+  addOutputLine("> sending...");
+
+  try {
+    const result = await sendToDiscord(name, email, message);
+
+    if (result.simulated) {
+      console.warn("[Contact] No discord_webhook configured in config.js — message not delivered.");
+    }
+
+    addOutputLine("✓ message sent!");
+
+    document.getElementById("contactName").value    = "";
+    document.getElementById("contactEmail").value   = "";
+    document.getElementById("contactMessage").value = "";
+
+  } catch (err) {
+    console.error("[Contact] Delivery failed:", err.message);
+    addOutputLine("✗ error: failed to send, please try again", true);
+  } finally {
+    contactSubmit.disabled = false;
+  }
+});
 
   // Ctrl+Enter to submit
   document.addEventListener("keydown", e => {
