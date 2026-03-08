@@ -36,6 +36,9 @@ const CONFIG = {
   exclude: [
     // "old-project",
     // "some-fork"
+    "Renderer",
+    "Swift",
+    "TheGreatBishwash"
   ],
 
   /* ── Cloudflare Worker URL ────────────────────────────────────
