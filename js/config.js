@@ -38,7 +38,8 @@ const CONFIG = {
     // "some-fork"
     "Renderer",
     "Swift",
-    "TheGreatBishwash"
+    "TheGreatBishwash",
+    "rango-frontend"
   ],
 
   /* ── Cloudflare Worker URL ────────────────────────────────────
